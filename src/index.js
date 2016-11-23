@@ -23,6 +23,8 @@ const Root = () => {
 	)
 }
 
+//3 State Management Objects - props, state, context (top-level, global)
+
 render( <Root/>, document.querySelector('#main') );
 //render( <App/>, document.querySelector('#main') );
 //render( <StorePicker/>, document.querySelector('#main') );
