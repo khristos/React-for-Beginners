@@ -10,7 +10,7 @@ import App from './components/App';
 import StorePicker from './components/StorePicker';
 import NotFound from './components/NotFound';
 
-//Stateless Functional Component
+//Stateless Functional Component - https://facebook.github.io/react/docs/components-and-props.html
 const Root = () => {
 	return (
 		<BrowserRouter>
