@@ -136,4 +136,9 @@ class App extends React.Component {
 	}
 }
 
+// https://facebook.github.io/react/docs/typechecking-with-proptypes.html
+App.propTypes = {
+	params: React.PropTypes.object.isRequired
+};
+
 export default App;

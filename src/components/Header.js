@@ -14,10 +14,14 @@ const Header = (props) => {
 				Day
 			</h1>
 			<h3 className="tagline"><span>{props.tagline}</span></h3>
-			{ /* <p>Header</p> */ }
 		</header>
 	)
 }
+
+// https://facebook.github.io/react/docs/typechecking-with-proptypes.html
+Header.propTypes = {
+	tagline: React.PropTypes.string.isRequired
+};
 
 /*
 function Header() { }

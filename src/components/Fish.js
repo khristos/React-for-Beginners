@@ -25,4 +25,11 @@ class Fish extends React.Component {
 	}
 }
 
+// https://facebook.github.io/react/docs/typechecking-with-proptypes.html
+Fish.propTypes = {
+		 details: React.PropTypes.object.isRequired,
+			 index: React.PropTypes.string.isRequired,
+	addToOrder: React.PropTypes.func.isRequired
+};
+
 export default Fish;
