@@ -10,10 +10,12 @@ import App from './components/App';
 import StorePicker from './components/StorePicker';
 import NotFound from './components/NotFound';
 
+const repo = `/${window.location.pathname.split('/')[1]}`;
+
 //Stateless Functional Component - https://facebook.github.io/react/docs/components-and-props.html
 const Root = () => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename={repo}>
 			<div>
 				<Match exactly pattern="/" component={StorePicker} />
 				<Match pattern="/store/:storeId" component={App} />
